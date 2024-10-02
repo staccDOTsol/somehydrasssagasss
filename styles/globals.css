@@ -1,0 +1,54 @@
+/* Apply a global retro gaming font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0b0c10; /* Dark background color */
+  font-family: 'Press Start 2P', cursive; /* Retro gaming font */
+  color: #ffffff; /* White text color for readability */
+}
+
+/* Style AppBar with a gradient for a more dynamic retro look */
+.MuiAppBar-root {
+  background: linear-gradient(90deg, #00b3ff 0%, #ab00ff 100%);
+}
+
+/* Typography styling for headers and titles */
+.MuiTypography-root {
+  text-shadow: 0 0 10px #00b3ff; /* Glowing effect */
+}
+
+/* Button styling for that retro look */
+.MuiButton-root {
+  background: #ff0099; /* Bright, eye-catching button color */
+  color: #000000; /* Text color for buttons */
+  border: 2px solid #ffffff; /* White border for contrast */
+  box-shadow: 0 0 5px #00b3ff; /* Glowing effect for depth */
+}
+
+/* Button hover effect */
+.MuiButton-root:hover {
+  background: #ff66aa; /* Lighter shade on hover */
+  color: #ffffff; /* Change text color on hover */
+  border-color: #00b3ff; /* Change border color on hover */
+}
+
+/* Stack styling to add spacing and align items */
+.MuiStack-root {
+  gap: 1rem; /* Space between items */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
+/* TextField styling for inputs */
+.MuiTextField-root {
+  background: #000000; /* Dark background for inputs */
+  border: 1px solid #ffffff; /* White border for contrast */
+  color: #ffffff; /* Text color */
+}
+
+/* Toolbar offset to ensure content is not hidden behind the AppBar */
+.MuiToolbar-root {
+  padding: 1rem;
+}

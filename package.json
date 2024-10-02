@@ -1,0 +1,60 @@
+{
+    "name": "@solana-mobile/example-web-app",
+    "author": "Steven Luscher <steven.luscher@solanamobile.com>",
+    "repository": "https://github.com/solana-mobile/mobile-wallet-adapter",
+    "license": "Apache-2.0",
+    "private": true,
+    "scripts": {
+        "clean": "shx rm -rf .next out",
+        "dev": "NODE_OPTIONS='--inspect' next dev",
+        "build": "yarn clean && next build && next export",
+        "start": "next start",
+        "lint": "next lint",
+        "tunnel:start": "ngrok http 3000"
+    },
+    "dependencies": {
+        "@coral-xyz/anchor": "^0.29.0",
+        "@date-io/date-fns": "^2.17.0",
+        "@emotion/react": "^11.11.3",
+        "@emotion/styled": "^11.11.0",
+        "@mui/icons-material": "^5.8.4",
+        "@mui/lab": "^5.0.0-alpha.159",
+        "@mui/material": "^5.15.3",
+        "@solana-mobile/mobile-wallet-adapter-protocol": "^1",
+        "@solana-mobile/mobile-wallet-adapter-protocol-web3js": "^1",
+        "@solana-mobile/wallet-adapter-mobile": "^1",
+        "@solana/spl-token": "0.2.0",
+        "@solana/wallet-adapter-base": "^0.9.23",
+        "@solana/wallet-adapter-react": "^0.15.35",
+        "@solana/wallet-adapter-react-ui": "^0.9.34",
+        "@solana/web3.js": "^1.76.0",
+        "@switchboard-xyz/solana.js": "^3.1.6",
+        "bignumber.js": "^9.1.2",
+        "browserify-zlib": "^0.2.0",
+        "crypto-browserify": "^3.12.0",
+        "date-fns": "^3.1.0",
+        "https-browserify": "^1.0.0",
+        "next": "^12.1.6",
+        "notistack": "^2.0.5",
+        "os-browserify": "^0.3.0",
+        "process": "^0.11.10",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "react-slick": "^0.30.2",
+        "slick-carousel": "^1.8.1",
+        "stream-browserify": "^3.0.0",
+        "stream-http": "^3.2.0",
+        "swr": "^1.3.0"
+    },
+    "resolutions": {
+        "@solana-mobile/mobile-wallet-adapter-protocol": "link:../@solana-mobile/mobile-wallet-adapter-protocol",
+        "@solana-mobile/mobile-wallet-adapter-protocol-web3js": "link:../@solana-mobile/mobile-wallet-adapter-protocol-web3js",
+        "@solana-mobile/wallet-adapter-mobile": "link:../../js/packages/wallet-adapter-mobile"
+    },
+    "devDependencies": {
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "ngrok": "^4.3.1",
+        "shx": "^0.3.4",
+        "typescript": "^4.7.4"
+    }
+}
